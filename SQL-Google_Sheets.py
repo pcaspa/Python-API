@@ -26,7 +26,7 @@ def connection_string(username,password,driver_name, server_name, database_name)
 
 try:
     conn = odbc.connect(connection_string(USER_NAME,PASSWORD,DRIVER_NAME, SERVER_NAME, DATABASE_NAME))
-    #conn, cursor = get_connection(user='###', Pass='###', IP='103.1.205.55\SQLEXPRESS,1141', database='###')
+    #conn, cursor = get_connection(user='###', Pass='###', IP='###', database='###')
     print('Connection Created')
 except odbc.DatabaseError as e:
     print('Database Error:')

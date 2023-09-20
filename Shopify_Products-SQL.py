@@ -208,7 +208,7 @@ def get_products_data(APIKey, APIPW, URLPart, conn, cursor, Handles_p, Brand):
     print (current_time," Shopify Products Added", len(json.loads(r.text)['products']))
     print (current_time," Shopify Lines Added", new)
 
-conn, cursor = get_connection(user='###', Pass='###', IP='103.1.205.55\SQLEXPRESS,1141', database='###')
+conn, cursor = get_connection(user='###', Pass='###', IP='###', database='###')
 
 Brands = ["###"]
 APIKey = ["###"]

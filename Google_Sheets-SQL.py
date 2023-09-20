@@ -32,7 +32,7 @@ rows = response['values'][1:]
 Push Dataset to SQL Server (database system)
 """
 DRIVER_NAME = 'ODBC Driver 17 for SQL Server' #'SQL Server'
-SERVER_NAME = '103.1.205.55\SQLEXPRESS,1141'
+SERVER_NAME = '###'
 DATABASE_NAME = '###'
 USER_NAME = '###'
 PASSWORD = '###'

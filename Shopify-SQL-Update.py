@@ -258,7 +258,7 @@ def update_orders_data(Handle_e, Brand, APIKey, APIPW, URLPart, cursor):
 
 
 conn, cursor = get_connection(
-    user='###', Pass='###', IP='103.1.205.55\SQLEXPRESS,1141', database='###')
+    user='###', Pass='###', IP='###', database='###')
 
 Brands = ["###"]
 APIKey = ["###"]

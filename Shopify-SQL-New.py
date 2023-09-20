@@ -282,7 +282,7 @@ def get_orders_data(link, conn, cursor, Handles_c, Brand, URLPart, APIKey, APIPW
         r = s.get(link.replace('https://'+URLPart+'.myshopify.com','https://'+APIKey+':'+APIPW+'@'+ URLPart+'.myshopify.com'))
 
 
-conn, cursor = get_connection(user='###', Pass='###', IP='103.1.205.55\SQLEXPRESS,1141', database='###')
+conn, cursor = get_connection(user='###', Pass='###', IP='###', database='###')
 
 Brands = ["###"]
 APIKey = ["###"]

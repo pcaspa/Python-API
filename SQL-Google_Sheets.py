@@ -7,7 +7,7 @@ import os
 Step 1.1 Connect to MS SQL Server Database System
 """
 DRIVER_NAME = 'ODBC Driver 17 for SQL Server' #'SQL Server'
-SERVER_NAME = '103.1.205.55\SQLEXPRESS,1141'
+SERVER_NAME = '###'
 DATABASE_NAME = '###'
 USER_NAME = '###'
 PASSWORD = '###'

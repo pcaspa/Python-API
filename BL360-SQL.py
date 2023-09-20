@@ -85,11 +85,11 @@ def get_connection(user, Pass, IP, database):
 
 if __name__ == "__main__":
     headers = {'Content-Type': 'application/json',
-               'Authorization': 'Token 19def389cf17c4157427c1cc5e62ced369360c67'}
+               'Authorization': '###'}
 
     def x(x): return requests.get(x, headers=headers)
     conn, cursor = get_connection(
-        user='###', Pass='###', IP='103.1.205.55\SQLEXPRESS,1141', database='###')
+        user='###', Pass='###', IP='###', database='###')
 
     cursor.execute("DELETE FROM ###.dbo.BL360_Inventory")
     conn.commit()

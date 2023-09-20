@@ -108,7 +108,7 @@ cursor.execute(sql_query)
 
 
 conn, cursor = get_connection(
-    user='###', Pass='###', IP='103.1.205.55\SQLEXPRESS,1141', database='BL360')
+    user='###', Pass='###', IP='###', database='BL360')
 cursor.execute("SELECT id from Odoo_SalesOrder;")
 existing_order_ids = [str(each[0]) for each in cursor.fetchall()]
 

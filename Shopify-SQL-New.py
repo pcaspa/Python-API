@@ -68,7 +68,7 @@ def get_line_item(link, conn, cursor, Handles_l, Brand, URLPart, APIKey, APIPW):
                 if str(Item_ID) not in Handles_l:
 
                     cursor.execute("""
-                                INSERT INTO Davie.dbo.Shopify_lineitems (Brand, Order_ID, Lineitem_quantity, Lineitem_name, Lineitem_price, Lineitem_sku,
+                                INSERT INTO ###.dbo.Shopify_lineitems (Brand, Order_ID, Lineitem_quantity, Lineitem_name, Lineitem_price, Lineitem_sku,
                                 Lineitem_requires_shipping, Lineitem_taxable, Lineitem_fulfillment_status, Item_ID, Create_Date, Update_Date)
                                 VALUES
                                 (?,?,?,?,?,?,?,?,?,?,?,?)
@@ -256,7 +256,7 @@ def get_orders_data(link, conn, cursor, Handles_c, Brand, URLPart, APIKey, APIPW
  
             if str(_ID) not in Handles_c:
                 cursor.execute("""
-                            INSERT INTO Davie.dbo.Shopify_orders (Brand, Order_ID, Name, Email, Financial_Status, Paid_at, Fulfillment_status, Fulfilled_at, Accepts_Marketing, Currency, Subtotal, Shipping, Taxes, Total,
+                            INSERT INTO ###.dbo.Shopify_orders (Brand, Order_ID, Name, Email, Financial_Status, Paid_at, Fulfillment_status, Fulfilled_at, Accepts_Marketing, Currency, Subtotal, Shipping, Taxes, Total,
                             Discount_code, Discount_amount, Billing_Name, Billing_Street, Billing_Address1, Billing_Address2, Billing_Company, Billing_City, Billing_Zip, Billing_Province, Billing_Country, Billing_Phone,
                             Shipping_Name, Shipping_Street, Shipping_Address1, Shipping_Address2, Shipping_Company, Shipping_City, Shipping_Zip, Shipping_Province, Shipping_Country, Shipping_Phone,
                             Cancelled_at, Payment_Method, Create_Date, Update_Date)
